@@ -1,50 +1,23 @@
-# React + TypeScript + Vite
+# TaskPulse
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+TaskPulse is a modern, all-in-one productivity and management tool. It combines task management, document organization, goal tracking, and dashboards in a single app to help users stay productive.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- **Task Management:** Plan and track tasks, including weekly to-dos.  
+- **Document Management:** Store and manage project documents efficiently.  
+- **Goals & Progress:** Set goals and visualize your progress.  
+- **User Authentication:** Secure login and registration via [Clerk](https://clerk.com/).  
+- **Real-time Updates:** Powered by [Convex](https://convex.dev/) for backend and realtime collaboration.  
+- **Responsive UI:** Built with React, TypeScript, Tailwind CSS, and Shadcn UI components.  
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+---
 
-- Configure the top-level `parserOptions` property like this:
+## 🛠 Tech Stack
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+- **Frontend:** React, TypeScript, Tailwind CSS, Shadcn UI  
+- **Backend & Realtime:** Convex  
+- **Authentication:** Clerk  
+- **Build Tool:** Vite  
